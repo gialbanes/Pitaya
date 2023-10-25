@@ -1,5 +1,4 @@
-
-<?php
+<?phP
 include("../models/conexao.php");
 
 $varIdPost = $_GET["bloginfo_codigo"];
@@ -15,8 +14,6 @@ mysqli_query($conexao, "DELETE FROM blog where blog_codigo = $varIdPost ");
 echo $result['blogimgs_random'];
 
 
-
 header("<location: ../views/pitaya.php"); //voltar pra index
-
 
 ?>

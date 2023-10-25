@@ -22,97 +22,19 @@
 
 </head>
 
-
-<body style="font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif'">
-
-
+<body>
 <!-- NAVBAR -->
-<header>
-    <nav class="navbar navbar-expand-lg" id="navarea">
-      <div class="container px-1">
-        <a class="navbar-brand" style="margin-left: -20%;" href="#hero">
-          <img src="imgs/logo.png" class="logo">
-        </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top: 1%">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4" style="font-weight: 600; margin-right: -5%">
-                <li class="nav-item" id="navhover"> <a href="#sobre" class="btn btn3 fs-4" style=""><b class="navtext">Sobre</b></a></li>
-                <li style="width:70px"> </li>
-                <li class="nav-item" id="navhover"><a href="#objetivos" class="btn btn3 fs-4"><b class="navtext">Objetivos</b></a></li>
-                <li style="width:70px"> </li>
-                <li class="nav-item" id="navhover"><a href="#equipe" class="btn btn3 fs-4"><b class="navtext">Equipe</b></a></li>
-                <li style="width:70px"> </li>
-                <li class="nav-item" id="navhover"><a href="views/pitaya.php" class="btn btn3 fs-4"><b class="navtext">Notícias</b></a></li>
-              </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<div class="navbar">
+        <img src="imgs/logo.png" alt="Logo da Minha Empresa" class="logo">
+        <ul class="nav-links">
+            <li class="nav-item" id="navhover"><a href="#sobre">Sobre</a></li>
+            <li class="nav-item" id="navhover"><a href="#objetivos">Objetivos</a></li>
+            <li class="nav-item" id="navhover"><a href="#equipe">Equipe</a></li>
+            <li class="nav-item" id="navhover"><a href="views/pitaya.php">Notícias</a></li>
+        </ul>
+    </div>
+
 <!-- END NAVBAR -->
-
-
-<!--
-<div class="navarea">
-  <div class="row">
-    <div class="col-6">
-      <a class="navbar-brand" href="#hero">
-        <img src="imgs/logo.png" class="logo"> 
-      </a>
-    </div>
-    <div class="col-6">
-      <div class="items">
-        <div class="row">
-        <div class="col">
-            <li class="nav-item" id="navhover"> 
-              <a href="#sobre" class="btn btn3 fs-4" style="">
-                <b class="navtext text-white">
-                  Sobre
-                </b>
-              </a>
-            </li>
-          </div>
-          <div class="col">
-            <li class="nav-item" id="navhover"> 
-              <a href="#sobre" class="btn btn3 fs-4" style="">
-                <b class="navtext text-white">
-                  Objetivos
-                </b>
-              </a>
-            </li>
-          </div>
-          <div class="col">
-            <li class="nav-item" id="navhover"> 
-              <a href="#sobre" class="btn btn3 fs-4" style="">
-                <b class="navtext text-white">
-                  Equipe
-                </b>
-              </a>
-            </li>
-          </div>
-          <div class="col">
-            <li class="nav-item" id="navhover"> 
-              <a href="#sobre" class="btn btn3 fs-4" style="">
-                <b class="navtext text-white">
-                  Contato
-                </b>
-              </a>
-            </li>
-          </div>
-          <div class="col">
-            <li class="nav-item"id="navhover"> 
-              <a href="#sobre" class="btn btn3 fs-4" style="">
-              <b class="navtext text-white">
-                Notícias
-              </b>
-              </a>
-            </li>
-          </div>
-        </div>  
-      </div>
-    </div>
-  </div>
-</div>
--->
-
 
 <!-- SOBRE -->
 
@@ -206,97 +128,10 @@
         </section>
     </main>
 </div>
+<!-- END OBJETIVOS -->
 
 
-
-
-  <!--
-  <section class="container-fluid" style="">
-
-
-    <div class="row position-relative text-center" style="">
-      <div class="col-md-11" style="color: #ffffff;">
-        <figure class="text-left">
-          <h1 class="position-relative text-center" id="objetivos">Objetivos do projeto</h1>
-        </figure>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="container-fluid d-flex justify-content-around" style="width: 100%;">
-      <div class="card" style="border-top-left-radius: 65px; border-bottom-right-radius: 65px;">
-        <div class="card-inner">
-          <img src="imgs/dinheiro.png" width="40%">
-            style="margin-left: 28%;padding: 2%;display: flex; align-content:center;margin-top: 7%;">
-          <br>
-          <figure class="fs-4 text-center" style="color: #ffb654;text-transform: uppercase;"><b>Acessibilidade
-              financeira</b></figure>
-
-          <figure class="fs-5" style="padding:4%; margin-top: -4%" id="textocard">Projetar o alimentador automático com
-            um custo acessível,
-            tornando-o economicamente viável para a maior parte da população.</figure>
-
-        </div>
-      </div>
-
-
-      <div class="card" style="border-top-left-radius: 65px; border-bottom-right-radius: 65px;">
-
-        <div class="card-inner" style="">
-          <img src="imgs/durabilidade.png" width="40%">
-            style="padding: 2%;margin-left: 28%;display: flex; align-content:center; margin-top: 7%;">
-          <br>
-          <figure class="fs-4 text-center" style="color: #ffb654;text-transform: uppercase;"><b>Durabilidade e
-              Qualidade</b></figure>
-
-          <figure class="fs-5" style="padding:4%; margin-top: -4%" id="textocard">Garantir a durabilidade do alimentador
-            automático, utilizando materiais resistentes e de alta qualidade.</figure>
-
-        </div>
-      </div>
-
-
-      <div class="card" style="border-top-left-radius: 65px; border-bottom-right-radius: 65px;">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="card-inner">
-          <img src="imgs/acessibilidade.png" width="40%">
-            style="padding: 4%;margin-left: 28%;display: flex; align-content:center;margin-top: 7%;">
-          <br>
-          <figure class="fs-4 text-center" style="color: #ffb654;text-transform: uppercase;"><b>Acessibilidade e
-              Usabilidade</b></figure>
-
-          <figure class="fs-5" style="padding:4%; margin-top: -4%" id="textocard">Projetar o alimentador automático
-            levando em consideração a facilidade de uso para diferentes públicos, incluindo pessoas com deficiências
-            físicas ou limitações.</figure>
-
-        </div>
-      </div>
-
-
-      <div class="card" style="border-top-left-radius: 65px; border-bottom-right-radius: 65px;">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="card-inner">
-          <img src="imgs/ideia.png" width="40%">
-            style="padding: 4%;margin-left: 28%;display: flex; align-content:center;margin-top: 7%;">
-          <br>
-          <figure class="fs-4 text-center" style="color: #ffb654;text-transform: uppercase;"><b>Conscientização e
-              Educação</b></figure>
-
-          <figure class="fs-5" style="padding:4%; margin-top: -4%" id="textocard">Promover a conscientização sobre a
-            importância da alimentação adequada para os pets e os benefícios de um alimentador automático</figure>
-
-        </div>
-      </div>
-    </div>
-  </section>
--->
-  <!-- END OBJETIVOS -->
-
-
-  <!-- OBJETIVOS DA EQUIPE -->
+<!-- OBJETIVOS DA EQUIPE -->
 
 <div class="row d-flex justify-content-center" style="margin-bottom: 15%;">
   <div class="col-md-7">
@@ -467,13 +302,9 @@
       <script src="https://kit.fontawesome.com/469e36d200.js" crossorigin="anonymous"></script>
       <div class="row d-flex justify-content-center mt-5">
         <div class="text-center">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <div class="social">
-                <a target="_blank" href="https://github.com/gialbanes" class="text-white"><i class="fa-brands fa-square-github"></i></a>
-            </li>
-        </div>
-      </ul>
+        <ul class="nav-links">
+            <li class="nav-item" id="navhover" style="margin-left:47%;"><a href="https://github.com/Pitaya-01" target="a/blank">Contato: Pitaya</a></li>
+        </ul>
     </div>
   </div>
 

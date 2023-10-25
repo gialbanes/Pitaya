@@ -1,5 +1,6 @@
 <?php
 include("../models/conexao.php");
+
 session_start();
 $usuario = $_POST["usuario"];
 $senha = $_POST["senha"];
@@ -16,7 +17,7 @@ if ($exibe = mysqli_fetch_array($query)){
     
     else{
         echo "<script>";
-        echo "alert('Usuário e/ou senha inválidos !'); window.location='../cms/index.php'";
+        echo "alert('Usuário e/ou senha inválidos !'); window.location='../cms/index.html'";
         echo "</script>";    
 }
 ?>
