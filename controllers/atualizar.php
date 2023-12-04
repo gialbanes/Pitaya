@@ -9,5 +9,5 @@ $varNoticiaData = $_POST["noticiaData"];
 
 mysqli_query($conexao, "UPDATE bloginfo set  bloginfo_titulo = '$varNoticiaTitulo', bloginfo_corpo = '$varNoticiaCorpo', bloginfo_data = '$varNoticiaData'  where bloginfo_codigo = '$varBlogCodigo';");
 
-header("location:../")
+header("location:../views/pitaya.php")
     ?>

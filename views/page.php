@@ -16,39 +16,63 @@ include("blades/header.php");
 </head>
 
 <body>
-    <div class="container p-3 mt-5 rounded-4 shadow-lg">    
-    <table class="table table-bordered table-striped" width="800">
-    <tr>
-                <td><b>Imagens</b></td>
-                <td><b>Posts</b></td>
-            </tr>
-            <?php
-            $varblogCodigo = $_GET["blog_codigo"];
-
-            $query = mysqli_query($conexao, "SELECT * from blog INNER JOIN bloginfo ON blog_bloginfo_codigo = bloginfo_codigo 
-            INNER JOIN blogimgs on blog_blogimgs_codigo = blogimgs_codigo 
-            INNER JOIN usuario ON blog_usuario_codigo = usuario_codigo 
-            where blog_codigo = $varblogCodigo");
-
-            while ($exibe = mysqli_fetch_array($query)) {
-                ?>
+    
+<div class="pct container">
+        <h3 class="fw-bold text-dark" style="font-size: 40px;text-align: center; height: 50%;margin-top: 10%;">Gerenciar notícias</h3>
+        <div class="table-responsive">
+            <table class="table table-rounded border-secondary-emphasis table-striped table-hover shadow mt-5" id="tabela">
                 <tr>
-                    <td class="text-center align-middle"><img src="../arquivos/<?php echo $exibe[11] ?>" width="100px" alt=""></td>
-                    <td>
-                        <h3>
-                            <?php echo $exibe[5] ?>
-                        </h3>
-                        Criada por <b>
-                            <?php echo $exibe[13] ?>
-                        </b> em
-                        <?php echo $exibe[7] ?>
-                        <hr>
-                        <?php echo ($exibe[6])?>
-                    </td>
+                    <th class="fw-bold">Imagens</th>
+                    <th class="fw-bold">Postagens</th>
+                    <th class="fw-bold">Editar</th>
+                    <th class="fw-bold">Excluir</th>
                 </tr>
-            <?php } ?>
-        </table>
-    </div>
-</body>
+                <?php
+                $query = mysqli_query($conexao, "SELECT * from blog INNER JOIN bloginfo ON blog_bloginfo_codigo = bloginfo_codigo INNER JOIN blogimgs on blog_blogimgs_codigo = blogimgs_codigo INNER JOIN usuario ON blog_usuario_codigo = usuario_codigo");
+                while ($exibe = mysqli_fetch_array($query)) {
+                ?>
+                    <tr>
+                        <td class="text-center align-middle"><img src="../arquivos/<?php echo $exibe[11] ?>" width="100px"></td>
+                        <td class="align-middle p-3">
+                            <h3>
+                                <?php echo $exibe[5] ?>
+                            </h3>
+                            <b> Criado por: </b>
+                            <?php echo $exibe[13] ?>
+                            <br>
+                            <b> Data: </b>
+                            <?php echo $exibe[7] ?>
+                            <hr>
+                            <b><?php echo substr($exibe[6], 0, 1000)  ?></b>
+                        </td>
+                        <td class="text-center align-middle">
+                            <a class="btn btn-primary d-grid" href="cadastroAtualiza.php?bloginfo_codigo=<?php echo $exibe[0] ?>">Editar</a>
+                        </td>
+                        <td class="text-center align-middle">
+                            <a class="btn btn-danger d-grid" href="../controllers/deletar.php?bloginfo_codigo=<?php echo $exibe[0] ?>&amp;imagemNome=<?php echo $exibe[6] ?>&amp;noticiaInfoCodigo=<?php echo $exibe[2] ?>">Excluir</a>
+                        </td>
+                    </tr>
+                <?php } ?>
+            </table>
+        </div>
+                </div>
+
+<style>
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+</style>
 
 </html>

@@ -1,6 +1,10 @@
 <?php include("blades/header.php"); ?>
 <?php include("../models/conexao.php"); ?>
 
+<style>
+    <?php include '../css/style.css'; ?>
+</style>
+
 <div class="container bg-white pt-2 mt-5 p-3 rounded-2 shadow">
 <?php
 $varBlogCodigo = $_GET["bloginfo_codigo"];
@@ -12,15 +16,15 @@ while ($exibe = mysqli_fetch_array($query)) {
         
         <input type="hidden" name="bloginfo_codigo" value="<?php echo $exibe[0] ?>">
 
-        <label class="form-label" style="font-size: 25px;">Título:</label>
-        <input class="form-control"type="text" name="noticiaTitulo" value="<?php echo $exibe[1] ?>"> <br>
-        <label class="form-label" style="font-size: 25px;">Corpo:</label>
+        <label class="form-label" style="font-size: 25px; margin-bottom: 15px;">Título:</label>
+        <input class="form-control" type="text" name="noticiaTitulo" value="<?php echo $exibe[1] ?>"> <br>
+        <label class="form-label" style="font-size: 25px; margin-bottom: 15px;">Corpo:</label>
         <input class="form-control"type="text" name="noticiaCorpo" value="<?php echo $exibe[2] ?>"> <br>
-        <label class="form-label" style="font-size: 25px;">Data:</label> <br>
+        <label class="form-label" style="font-size: 25px; margin-bottom: 15px;">Data:</label> <br>
         <input class="form-control"type="text" name="noticiaData" value="<?php echo $exibe[3] ?>"> <br>
 
 
-        <label class="usuario" style="font-size: 25px;">Selecione um usuario:</label>     
+        <label class="usuario" style="font-size: 25px; margin-bottom: 15px;">Selecione um usuário:</label>      
     <?php  
     $query = mysqli_query($conexao, "SELECT * FROM usuario ORDER BY usuario_codigo;");
     ?>
@@ -47,6 +51,19 @@ while ($exibe = mysqli_fetch_array($query)) {
 
 
     </form>
+
+    <style>
+    body {
+    background: rgb(226,103,142);
+    background: linear-gradient(90deg, rgba(226,103,142,1) 0%, rgba(255,182,84,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+</style>
+
     </body>
 </html>
 

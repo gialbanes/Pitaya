@@ -8,7 +8,7 @@ $extension = pathinfo($destino, PATHINFO_EXTENSION);
 $img = $arquivo['name'][0];
 $imgRandom = md5(uniqid($img)) . "." . $extension;
 
-if ($extension == "png") {
+if ($extension == "png" or $extension == "jpg") {
     move_uploaded_file($arquivo['tmp_name'][0], $diretorio . "/" . $imgRandom);
 } else {
     exit("Arquivo não é compatível");
@@ -34,6 +34,6 @@ $id_info = mysqli_insert_id($conexao);
 mysqli_query($conexao, "INSERT INTO blog (blog_blogimgs_codigo, blog_bloginfo_codigo, blog_usuario_codigo) 
 VALUES ('$id_img', '$id_info' , '$PostagemUsuarioCodigo');");
 
-header("location:../index.php");
+header("location:../views/pitaya.php");
 
 ?>

@@ -1,2 +1,2 @@
 # pitaya
-Landing Page sobre o TCC Pitaya 
+Site sobre o TCC Pitaya 
