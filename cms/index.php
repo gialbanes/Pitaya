@@ -11,7 +11,7 @@ include("../views/blades/header.php");
     <div class="card">
         <h3 class="card-header">Login</h3>
             <div class="card-body">
-                <form action="../controllers/login.php" method="POST">
+                <form action="../views/post.php" method="POST">
                     <div class="form-group">
                         <label for="usuario">Nome:</label>
                         <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Digite seu nome" required>
