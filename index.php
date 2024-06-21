@@ -7,14 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pitaya</title>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
-
+  <!-- BootStrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -25,7 +27,7 @@
 <body>
 <!-- NAVBAR -->
 <div class="navbar">
-        <img src="imgs/logo.png" alt="Logo da Minha Empresa" class="logo">
+        <img src="imgs/logo.png" class="logo">
         <ul class="nav-links">
             <li class="nav-item" id="navhover"><a href="#sobre">Sobre</a></li>
             <li class="nav-item" id="navhover"><a href="#objetivos">Objetivos</a></li>
@@ -33,11 +35,9 @@
             <li class="nav-item" id="navhover"><a href="views/pitaya.php">Notícias</a></li>
         </ul>
     </div>
-
 <!-- END NAVBAR -->
 
 <!-- SOBRE -->
-
 <section id="hero">
   <div class="container-fluid" style="margin-top: 7%;">
     <div class="row" style="margin-left: 10%">  
@@ -86,7 +86,6 @@
       </div>
     </div>
   </section>
-
   <!-- END SOBRE -->
 
   <!-- OBJETIVOS DO PRODUTO -->
@@ -132,7 +131,6 @@
 
 
 <!-- OBJETIVOS DA EQUIPE -->
-
 <div class="row d-flex justify-content-center" style="margin-bottom: 15%;">
   <div class="col-md-7">
     <figure class="text-left">
@@ -257,10 +255,6 @@
   <!-- END EQUIPE -->
 </div> <!-- fechamento wrapper -->
 
-<br><br><br><br><br><br>
-
-<script src="script.js"></script>
-
 <!-- FOOTER -->
 <footer class=" text-white pt-5 pb-4" style="background-color: #E2678E; width: 100%;">
   <div class="container text-md-left">
@@ -319,7 +313,6 @@
   </div>
 </footer>
 <!-- END FOOTER -->
-
 <script src="script.js"></script>
 
 </body>

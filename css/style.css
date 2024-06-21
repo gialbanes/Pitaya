@@ -268,7 +268,7 @@ body {
   }
 
 
-  /* IMAGEM BLOCOS DE NOTA */
+  /* IMAGEM*/
 .imagecard {
   border-top: 10px solid #ffb654;
   margin:auto;
@@ -307,6 +307,7 @@ body {
   background-color: #fff;
   border-bottom: 8px solid #E2678E; 
   border-radius: 50px 50px 0px 0px;
+  top: 200px;
 }
 /* END FOOTER */
 
